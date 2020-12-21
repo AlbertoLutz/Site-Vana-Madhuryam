@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus.woff2') format('woff2'), url('../../fonts/GentiumPlus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus-Italic.woff2') format('woff2'), url('../../fonts/GentiumPlus-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-BoldItalic.woff2') format('woff2'), url('../../fonts/Panton-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Bold.woff2') format('woff2'), url('../../fonts/Panton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Regular.woff2') format('woff2'), url('../../fonts/Panton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Italic.woff2') format('woff2'), url('../../fonts/Panton-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samarkan';
+    src: url('../../fonts/SamarkanNormal.woff2') format('woff2'), url('../..fonts/SamarkanNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: rgb(255, 102, 153);
+}
+
+body {
+    background-color: rgba(255, 102, 153, 0.5);
+    background-image: url('../../img/background.png');
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.background-top {
+    background-color: var(--primary-color);
+    height: 170px;
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-container img {
+    margin: 1.5rem 0 1.6rem -5rem;
+}
+
+.header-container .logo-box p {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    font-weight: 150;
+    color: whitesmoke;
+    margin: -10rem 0 0 6rem;
+    line-height: 1.2em;
+}
+
+.header-container .search-box p {
+    text-transform: uppercase;
+    font-family: 'Panton';
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: -2rem;
+    padding-top: 2.4rem;
+}
+
+.search-box {
+    position: absolute;
+    margin-left: 39.5rem;
+}
+
+.search-box input {
+    width: 18.75rem;
+    height: 1.875;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    background: none;
+    margin-top: 3rem;
+    margin-left: 15.5rem;
+}
+
+.search-box input::placeholder {
+    color: white;
+    font-family: 'Panton';
+    padding-left: 8px;
+}
+
+#btn-search {
+    color: whitesmoke;
+    position: absolute;
+    margin-top: 3.1rem;
+    margin-left: -1.5rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+nav {
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 5px 0;
+    text-align: center;
+    width: 100vw;
+    margin-top: -.2rem;
+    margin-left: -14rem;
+}
+
+nav span {
+    margin: 0 auto;
+}
+
+nav a {
+    font-family: 'Gentium Plus';
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:active {
+    color: #000000;
+}
+
+.banner-container {
+    display: flex;
+    width: 90%;
+    margin-top: 4rem;
+}
+
+.banner-container p {
+    margin-top: 8rem;
+    margin-left: -3rem;
+    font-family: 'Gentium Plus';
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.banner-container img {
+    margin-left: 24.5rem;
+    margin-top: -29.3rem;
+    width: 46.875rem;
+}
+
+.banner-container div::after {
+    content: url('../../img/vertical-frame.png');
+    position: absolute;
+    margin-left: -48.6rem;
+    margin-top: -29.3rem;
+}
+
+.banner-container::before {
+    content: url('../../img/vertical-frame.png');
+    position: absolute;
+    margin-left: 72rem;
+    margin-top: 2.5rem;
+    transform: scaleX(-1);
+}
+
+.banner-container div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -6.7rem;
+}
+
+.banner-container div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -4.2rem;
+}
+
+.banner-container button {
+    position: absolute;
+    border-radius: 14px;
+    padding: 5px 35px;
+    border: none;
+    font-family: 'Gentium Plus';
+    font-style: italic;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: -1rem;
+    z-index: 1;
+}
+
+button a {
+    color: var(--primary-color);
+}
+
+button a:hover {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+text:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input {
+    font-family: 'Panton';
+    color: whitesmoke;
+    padding-left: .5rem;
+}
+
+.divide-bar {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    margin-top: -105rem;
+}
+
+.wrap-container {
+    width: 81vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5rem;
+    margin-left: -5rem;
+}
+
+.wrap-container div {
+    width: 250px;
+}
+
+.wrap-container a {
+    text-decoration: none;
+    font-family: 'Gentium Plus';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.wrap-container a:hover {
+    text-decoration: none;
+}
+
+.wrap-container h2 {
+    background-color: var(--primary-color);
+    width: 250px;
+    height: 85px;
+    margin-top: -435px;
+    font-family: 'Samarkan';
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 85px;
+}
+
+.wrap-container span {
+    color: whitesmoke;
+}
+
+.wrap-container h2::after {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -4.2rem;
+    display: flex;
+    margin-left: -1rem;
+    margin-top: 9rem;
+    transform: rotatex(180deg);
+}
+
+.wrap-container h2::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -4.2rem;
+    display: flex;
+    margin-left: 4.9rem;
+    margin-top: -1rem;
+    transform: rotatey(180deg);
+}
+
+.wrap-container p {
+    margin-top: 23rem;
+    font-family: 'Gentium Plus';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wrap-container button {
+    padding: 1px 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Gentium Plus';
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.mandalas {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffbcd2;
+    height: 305px;
+    width: 100vw;
+    margin-top: 110rem;
+    margin-left: -14rem;
+}
+
+.mandalas a {
+    font-family: 'Panton';
+    color: whitesmoke;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.mandalas a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.calendar a {
+    position: absolute;
+    margin-top: 1.9em;
+    margin-left: -12rem;
+    text-decoration: none;
+}
+
+.who a {
+    position: absolute;
+    margin-top: 1.9em;
+    margin-left: -12.7rem;
+    text-decoration: none;
+}
+
+/*BOX MANDALAS*/
+
+/*BOOKS*/
+
+.books a {
+    position: absolute;
+    margin-top: 1.9em;
+    margin-left: -9.1rem;
+    text-decoration: none;
+}
+
+footer {
+    margin: 134rem 0 4rem 0;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer a {
+    color: var(--primary-color);
+}
+
+.container-footer span {
+    color: whitesmoke;
+}
+
+.container-footer a:hover {
+    text-decoration: none;
+    color: #000000;
+}

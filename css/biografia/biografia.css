@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../fonts/GentiumPlus-Italic.woff2') format('woff2'), url('../fonts/GentiumPlus-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samarkan';
+    src: url('../fonts/SamarkanNormal.woff2') format('woff2'), url('..fonts/SamarkanNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: rgb(255, 102, 153);
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+.bio-container {
+    display: flex;
+    margin-top: -30rem;
+}
+
+.bio-container img {
+    margin-left: 60.1rem;
+    margin-top: 3.1rem;
+}
+
+.top-container {
+    position: absolute;
+    margin-left: 12rem;
+    transform: translateY(6rem);
+}
+
+.top-container img {
+    width: 730px;
+}
+
+.bio-container p {
+    width: 700px;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Gentium Plus';
+    font-weight: 800;
+    margin-left: 11rem;
+    margin-top: 13rem;
+    font-size: 1.1rem;
+}
+
+.bio-container img:nth-child(1) {
+    position: absolute;
+    transform: translateY(-50px);
+    margin-left: -.4rem;
+}
+
+.bio-container div::after {
+    content: url('../../img/vertical-frame-bio.png');
+    position: absolute;
+    margin-left: -29.5rem;
+    margin-top: 50px;
+}
+
+.bio-container::before {
+    content: url('../../img/vertical-frame-bio.png');
+    position: absolute;
+    margin-left: 1410px;
+    margin-top: 50px;
+    transform: scaleX(-1);
+}
+
+.bio-container div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: -38rem;
+    margin-top: -6rem;
+}
+
+.bio-container div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -11.5rem;
+}
+
+.bio-container h2 {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: 'Panton';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: -2rem;
+    margin-left: 9.2rem;
+    color: var(--primary-color);
+}
+
+.divide-bar img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25rem;
+}
+
+.mandalas {
+    background-color: rgba(255, 102, 153, 0.2);
+    background-image: url('../img/background.png');
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mandala-bio {
+    margin: 0 auto;
+    opacity: .8;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mandalas h2 {
+    font-family: 'Samarkan';
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+.mandalas p {
+    padding-top: 1rem;
+    font-family: 'Gentium Plus';
+    font-weight: bold;
+}
+
+.mandalas p:nth-child(2n) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container-footer div {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}

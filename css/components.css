@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus.woff2') format('woff2'), url('../../fonts/GentiumPlus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus-Italic.woff2') format('woff2'), url('../../fonts/GentiumPlus-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-BoldItalic.woff2') format('woff2'), url('../../fonts/Panton-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Bold.woff2') format('woff2'), url('../../fonts/Panton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Regular.woff2') format('woff2'), url('../../fonts/Panton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Italic.woff2') format('woff2'), url('../../fonts/Panton-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: rgb(255, 102, 153);
+}
+
+body {
+    background-color: rgba(255, 102, 153, 0.5);
+    background-image: url('../../img/background.png');
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.background-top {
+    background-color: var(--primary-color);
+    height: 170px;
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-container img {
+    margin: 1.5rem 0 1.6rem -5rem;
+}
+
+.header-container .logo-box p {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    font-weight: 150;
+    color: whitesmoke;
+    margin: -10rem 0 0 6rem;
+    line-height: 1.2em;
+}
+
+.header-container .search-box p {
+    text-transform: uppercase;
+    font-family: 'Panton';
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: -2rem;
+    padding-top: 2.4rem;
+}
+
+.search-box {
+    position: absolute;
+    margin-left: 39.5rem;
+}
+
+.search-box input {
+    width: 18.75rem;
+    height: 1.875;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    background: none;
+    margin-top: 3rem;
+    margin-left: 15.5rem;
+}
+
+.search-box input::placeholder {
+    color: white;
+    font-family: 'Panton';
+    padding-left: 8px;
+}
+
+#btn-search {
+    color: whitesmoke;
+    position: absolute;
+    margin-top: 3.1rem;
+    margin-left: -1.5rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+text:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input {
+    font-family: 'Panton';
+    color: whitesmoke;
+    padding-left: .5rem;
+}
+
+nav {
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 5px 0;
+    text-align: center;
+    width: 100vw;
+    margin-top: -.2rem;
+    margin-left: -14rem;
+}
+
+nav span {
+    margin: 0 auto;
+}
+
+nav a {
+    font-family: 'Gentium Plus';
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:active {
+    color: #000000;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.container-footer a {
+    color: var(--primary-color);
+}
+
+.container-footer span {
+  color: whitesmoke;
+}
+
+.container-footer a:hover {
+    text-decoration: none;
+    color: #000000;
+}

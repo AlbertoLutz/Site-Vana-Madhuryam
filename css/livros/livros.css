@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus.woff2') format('woff2'), url('../../fonts/GentiumPlus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gentium Plus';
+    src: url('../../fonts/GentiumPlus-Italic.woff2') format('woff2'), url('../../fonts/GentiumPlus-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-BoldItalic.woff2') format('woff2'), url('../../fonts/Panton-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Bold.woff2') format('woff2'), url('../../fonts/Panton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Regular.woff2') format('woff2'), url('../../fonts/Panton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('../../fonts/Panton-Italic.woff2') format('woff2'), url('../../fonts/Panton-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samarkan';
+    src: url('../../fonts/SamarkanNormal.woff2') format('woff2'), url('../..fonts/SamarkanNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: rgb(255, 102, 153);
+}
+
+.books-wraper {
+    margin-top: 80rem;
+    margin-left: -16rem;
+}
+
+.books {
+    display: flex;
+    margin-top: 4rem;
+   
+}
+
+.books img {
+    margin-left: 13rem;
+    margin-top: -102rem;
+}
+
+
+.books p {
+    width: 700px;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Gentium Plus';
+    font-weight: 800;
+    margin-left: 40rem;
+    margin-top: -70rem;
+  
+}
+
+
+.joias div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: -24.5rem;
+    transform: rotate(180deg);
+ 
+}
+
+.joias div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.sri div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 37rem;
+    margin-top: -24.5rem;
+    transform: rotate(180deg);
+ 
+}
+
+.sri div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.bhakta div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 19.5rem;
+    margin-top: -24.5rem;
+    transform: rotate(180deg);
+ 
+}
+
+.bhakta div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.gopi div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 19.5rem;
+    margin-top: -42.3rem;
+    transform: rotate(180deg);
+ 
+}
+
+.gopi div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.bhramara div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 19.5rem;
+    margin-top: -28.5rem;
+    transform: rotate(180deg);
+ 
+}
+
+.bhramara div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.madhu div p::after {
+    content: url('../../img/botom-frame.png');
+    position: absolute;
+    margin-left: 19.5rem;
+    margin-top: -9.3rem;
+    transform: rotate(180deg);
+ 
+}
+
+.madhu div p::before {
+    content: url('../../img/top-frame.png');
+    position: absolute;
+    margin-left: -31rem;
+    margin-top: -3rem;
+}
+
+.gopi span {
+    position: absolute;
+    transform: translatey(1.7em);
+}
+
+.books-wraper h2 {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: 'Panton';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: -75rem;
+    margin-left: 10rem;
+    color: var(--primary-color);
+}
+
+.botao {
+    position: absolute;
+    border-radius: 14px;
+    padding: 5px 35px;
+    border: none;
+    font-family: 'Gentium Plus';
+    font-style: italic;
+    font-weight: bold;    
+    margin-top: -31rem;
+    margin-left: -18.5rem;
+    z-index: 1;
+}
+
+.botao a {
+    color: var(--primary-color);
+}
+
+.botao a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.books span {
+    position: absolute;
+    font-family: 'Gentium Plus';
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin-left: -27rem;
+    margin-top: -27.5rem;
+}
+
+.divide-bar {
+   height: 25px;
+   margin:  26rem 0 0 -2.8rem;
+}
+
+.container-footer {
+    margin-top: 195rem;
+}
+
+.copy {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
